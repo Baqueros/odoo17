@@ -1,0 +1,7 @@
+#sh_restrict_out_of_stock_popup .footer .restrict_order_confirm {color: white;background: #017e84 !important;border-radius: 2px !important;}
+#sh_restrict_out_of_stock_popup .popup header.title{padding: 15px;}
+#sh_restrict_out_of_stock_popup .popup main.body .sh_popup_body{font-size: 16px;}
+@media only screen and (max-width: 767.98px) {
+    .pos .popups #sh_restrict_out_of_stock_popup .popup {max-width: 320px;left: 48%;}
+    .pos .popups #sh_restrict_out_of_stock_popup .popup .sh_popup_body {font-size: 15px;}
+}

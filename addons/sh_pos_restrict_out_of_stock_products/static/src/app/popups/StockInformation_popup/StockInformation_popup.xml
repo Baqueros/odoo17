@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="sh_pos_restrict_out_of_stock_products.StockInformationPopup">
+        <div class="popup"  id='sh_restrict_out_of_stock_popup'>
+            <div class="modal-header">
+                <h4 class="modal-title title drag-handle ">
+                    Out of Stock !
+                </h4>
+            </div>
+            <main class="body modal-body sh_pricelist_main_table">
+                <div class="sh_popup_body">
+                    Product
+                    <strong>
+                        <t t-esc="props.product.display_name" />
+                    </strong>
+                    has not enough stock. If you still want to add product then please click in Order.
+                </div>
+            </main>
+            <footer class="footer modal-footer">
+                <div class="button cancel btn btn-lg btn-primary" t-on-click="confirm">
+                    Order
+                </div>
+                <div class="button cancel btn btn-lg btn-secondary" t-on-click="cancel">
+                    Cancel
+                </div>
+            </footer>
+        </div>
+    </t>
+
+</templates>

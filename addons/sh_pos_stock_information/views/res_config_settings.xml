@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="sh_pos_stock_info_res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">sh.pos.stock.info.res.config.settings.view.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <block id="pos_inventory_section" position="after">
+                <block title="Display Stock Information" name="sh_display_stock_information">
+                    <setting>
+                        <field name='pos_sh_enable_on_hand_qty' />
+                    </setting>
+                    <setting invisible="not pos_sh_enable_on_hand_qty">
+                        <field name='pos_sh_manage_stock' widget='radio' />
+                    </setting>
+                </block>
+            </block>
+        </field>
+    </record>
+</odoo>
